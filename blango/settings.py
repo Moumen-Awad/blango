@@ -93,8 +93,9 @@ class Dev(Configuration):
   ]
 
   WSGI_APPLICATION = 'blango.wsgi.application'
-
-
+  REGISTRATION_OPEN = True
+  ACCOUNT_ACTIVATION_DAYS = 7
+  EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
   # Database
   # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
